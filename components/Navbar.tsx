@@ -54,6 +54,7 @@ interface ContainerProps {
 const ContainerStyled = styled.div<ContainerProps>`
   position: fixed;
   top: 0;
+  z-index: 999;
   width: 1600px;
   min-height: 70px;
   border-radius: 0 0 20px 20px;
