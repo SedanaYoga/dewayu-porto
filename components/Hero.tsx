@@ -14,74 +14,11 @@ const Hero = () => {
         </HeroText>
         <ButtonStyled>Let&apos;s Rock</ButtonStyled>
       </HeroInfo>
-      <HeroPhotoStyled>
-        <div className='hero-photo-container'>
-          <div>
-            <Image
-              src='/hero-asset1.png'
-              width='901'
-              height='867.39'
-              alt='hero-asset1'
-            />
-          </div>
-          <div className='hero-photo'>
-            <Image
-              src='/hero-photo.png'
-              width='595.55'
-              height='755.78'
-              alt='hero-asset1'
-            />
-          </div>
-          <div className='hero-asset1'>
-            <Image src='/asset1.png' width='240' height='240' alt='asset1' />
-          </div>
-          <div className='hero-asset2'>
-            <Image src='/asset2.png' width='180' height='180' alt='asset2' />
-          </div>
-          <div className='hero-asset3'>
-            <Image src='/asset3.png' width='180' height='180' alt='asset3' />
-          </div>
-        </div>
-      </HeroPhotoStyled>
     </HeroStyled>
   )
 }
 
 export default Hero
-
-export const HeroPhotoStyled = styled.div`
-  position: absolute;
-  top: 93px;
-  left: 0;
-  width: 901px;
-  height: 867.39px;
-  .hero-photo-container {
-    position: relative;
-    width: 100%;
-  }
-  .hero-photo-container > div {
-    position: absolute;
-  }
-  .hero-photo {
-    left: 270px;
-    top: 50px;
-    z-index: 2;
-  }
-  .hero-asset1 {
-    left: 230px;
-    top: 200px;
-  }
-  .hero-asset2 {
-    right: -830px;
-    top: 100px;
-    z-index: 1;
-  }
-  .hero-asset3 {
-    right: 80px;
-    top: 40px;
-    z-index: 1;
-  }
-`
 
 export const HeroStyled = styled.div`
   display: flex;
@@ -94,7 +31,6 @@ export const HeroStyled = styled.div`
 export const HeroInfo = styled.div`
   width: 608px;
   height: 721px;
-  z-index: 2;
 `
 
 export const ButtonStyled = styled.button`
