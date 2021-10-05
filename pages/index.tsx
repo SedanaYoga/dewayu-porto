@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import styled from 'styled-components'
 import Hero from '../components/Hero'
 import MyExpertises from '../components/MyExpertises'
+import MyWorks from '../components/MyWorks'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <ContentStyled>
           <Hero />
           <MyExpertises />
+          <MyWorks />
         </ContentStyled>
       </Layout>
       <HeroBackgroundImage>
@@ -56,11 +58,21 @@ const Home: NextPage = () => {
           <Image src='/asset4.png' width='1920' height='1457' alt='asset4' />
         </div>
       </ExpertiseBackgroundImage>
+      <WorksBackgroundImage>
+        <div className='asset5'>
+          <Image src='/asset5.png' width='1920' height='1457' alt='asset5' />
+        </div>
+      </WorksBackgroundImage>
     </HomeStyled>
   )
 }
 
 export default Home
+
+export const WorksBackgroundImage = styled.div`
+  position: absolute;
+  top: 2110px;
+`
 
 export const ExpertiseBackgroundImage = styled.div`
   position: absolute;
@@ -92,7 +104,7 @@ export const HeroBackgroundImage = styled.div`
   .hero-photo {
     left: 270px;
     top: 50px;
-    z-index: 2;
+    z-index: 3;
   }
   .hero-photo-bg {
     top: 0;

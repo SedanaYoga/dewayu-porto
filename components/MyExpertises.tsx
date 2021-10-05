@@ -22,7 +22,7 @@ const CardData: CardInterface[] = [
       'I enjoy designing my idea to 3D Files. Every product can be digitalize by different tools, based on their needs. It is chalengging to me. ',
   },
   {
-    imgPath: '/human-centered-icon.svg',
+    imgPath: '/human-centered-icon.png',
     title: 'Human Centered',
     description:
       'Focusing on people and surroundings. As an empath, I love to discover the user’s problem and find the right solutions.',
@@ -198,7 +198,9 @@ export const CardStyled = styled.div<CardProps>`
     .card-image-icon {
       position: absolute;
       left: ${(props) =>
-        props.cardImage === '/human-centered-icon.svg' && '60px'};
+        props.cardImage === '/human-centered-icon.png' && '63px'};
+      top: ${(props) =>
+        props.cardImage === '/human-centered-icon.png' && '55px'};
       z-index: 2;
       img {
         width: ${(props) => props.cardImage === '/3d-icon.svg' && '100px'};
