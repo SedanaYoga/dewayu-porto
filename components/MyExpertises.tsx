@@ -240,7 +240,10 @@ export const ExpertiseStyled = styled.div`
   align-items: center;
   margin-top: 30px;
   h1 {
-    font-size: 180px;
+    font-size: 191px;
+    line-height: 286px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
     color: rgba(255, 255, 255, 0.4);
   }
 `

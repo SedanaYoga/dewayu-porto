@@ -53,28 +53,18 @@ const Home: NextPage = () => {
           </div>
         </div>
       </HeroBackgroundImage>
-      <ExpertiseBackgroundImage>
-        <div className='asset4'>
-          <Image src='/asset4.png' width='1920' height='1457' alt='asset4' />
+      <HomeBackgroundImage>
+        <div>
+          <Image src='/home-bg.png' width='1920' height='3100' alt='home-bg' />
         </div>
-      </ExpertiseBackgroundImage>
-      <WorksBackgroundImage>
-        <div className='asset5'>
-          <Image src='/asset5.png' width='1920' height='1457' alt='asset5' />
-        </div>
-      </WorksBackgroundImage>
+      </HomeBackgroundImage>
     </HomeStyled>
   )
 }
 
 export default Home
 
-export const WorksBackgroundImage = styled.div`
-  position: absolute;
-  top: 2110px;
-`
-
-export const ExpertiseBackgroundImage = styled.div`
+export const HomeBackgroundImage = styled.div`
   position: absolute;
   top: 1000px;
 `
@@ -93,9 +83,11 @@ export const HeroBackgroundImage = styled.div`
   left: 0;
   width: 901px;
   height: 867.39px;
+
   .hero-photo-container {
     position: relative;
     width: 100%;
+    min-height: 100px;
   }
   .hero-photo-container > div {
     position: absolute;
@@ -126,7 +118,6 @@ export const HeroBackgroundImage = styled.div`
     top: 40px;
     z-index: 2;
   }
-  .asset-expertise
 `
 export const ContentStyled = styled.div`
   display: flex;
