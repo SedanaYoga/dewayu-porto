@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Hero from '../components/Hero'
 import MyExpertises from '../components/MyExpertises'
 import MyWorks from '../components/MyWorks'
+import Testimonial from '../components/Testimonial'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
           <Hero />
           <MyExpertises />
           <MyWorks />
+          <Testimonial />
         </ContentStyled>
       </Layout>
       <HeroBackgroundImage>
