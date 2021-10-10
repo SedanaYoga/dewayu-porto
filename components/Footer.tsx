@@ -7,15 +7,7 @@ const Footer = () => {
     <FooterStyled>
       <p>Reach Me</p>
       <div className='reach-sosmed'>
-        <a href='/google.com'>
-          <Image
-            src='/sosmed-footer/google.png'
-            width='32'
-            height='32'
-            alt='google'
-          />
-        </a>
-        <a href='/linkedin.com'>
+        <a href='https://www.linkedin.com/in/dewaayuindahwistasari/'>
           <Image
             src='/sosmed-footer/linkedin.png'
             width='32'
@@ -23,19 +15,16 @@ const Footer = () => {
             alt='linkedin'
           />
         </a>
-        <a href='/instagram.com'>
+        <a href='https://www.instagram.com/dewayudewayu/'>
           <Image src='/sosmed-footer/ig.png' width='32' height='32' alt='ig' />
         </a>
-        <a href='/twitter.com'>
+        <a href='https://www.behance.net/dewaaiwss/'>
           <Image
-            src='/sosmed-footer/twitter.png'
+            src='/sosmed-footer/behance.png'
             width='32'
             height='32'
-            alt='twitter'
+            alt='wa'
           />
-        </a>
-        <a href='/whatsapp.com'>
-          <Image src='/sosmed-footer/wa.png' width='32' height='32' alt='wa' />
         </a>
       </div>
       <div className='download-container'>
@@ -75,10 +64,13 @@ export const FooterStyled = styled.div`
   color: white;
   .reach-sosmed {
     margin-top: 24px;
-    width: 260px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+      border-radius: 10px;
+    }
   }
   .download-container {
     margin-top: 30px;
@@ -106,6 +98,7 @@ export const FooterStyled = styled.div`
         width: auto;
         height: 37px;
         background: white;
+        cursor: pointer;
         p {
           padding-left: 5px;
         }
