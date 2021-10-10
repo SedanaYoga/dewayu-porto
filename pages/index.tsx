@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <Image src='/asset2.png' width='180' height='180' alt='asset2' />
           </div>
           <div className='hero-asset3'>
-            <Image src='/asset3.png' width='180' height='180' alt='asset3' />
+            <Image src='/asset3.png' width='150' height='150' alt='asset3' />
           </div>
         </div>
       </HeroBackgroundImage>
@@ -84,7 +84,7 @@ export const HomeStyled = styled.div`
 `
 export const HeroBackgroundImage = styled.div`
   position: absolute;
-  top: 93px;
+  top: 60px;
   left: 0;
   width: 901px;
   height: 867.39px;
@@ -115,12 +115,12 @@ export const HeroBackgroundImage = styled.div`
   }
   .hero-asset2 {
     right: -860px;
-    top: 100px;
+    top: 120px;
     z-index: 2;
   }
   .hero-asset3 {
-    right: 80px;
-    top: 40px;
+    right: 30px;
+    top: 60px;
     z-index: 2;
   }
 `
