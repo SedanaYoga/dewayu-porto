@@ -7,6 +7,7 @@ import Hero from '../components/Hero'
 import MyExpertises from '../components/MyExpertises'
 import MyWorks from '../components/MyWorks'
 import Testimonial from '../components/Testimonial'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
           <MyExpertises />
           <MyWorks />
           <Testimonial />
+          <Footer />
         </ContentStyled>
       </Layout>
       <HeroBackgroundImage>
@@ -69,6 +71,7 @@ export default Home
 export const HomeBackgroundImage = styled.div`
   position: absolute;
   top: 1000px;
+  pointer-events: none;
 `
 
 export const HomeStyled = styled.div`

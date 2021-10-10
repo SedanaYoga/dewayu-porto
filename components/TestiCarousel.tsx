@@ -47,7 +47,7 @@ export const TestiCarouselStyled = styled.div`
   margin-top: 50px;
   position: relative;
   left: -287px;
-  width: 1911px;
+  width: 1910px;
   height: auto;
   padding: 100px 0 100px;
   overflow: hidden;
