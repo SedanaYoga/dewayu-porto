@@ -44,6 +44,7 @@ export const ButtonStyled = styled.button`
   font-family: 'Poppins';
   font-size: 23px;
   font-weight: 600;
+  cursor: pointer;
   ::before {
     content: '';
     position: absolute;
@@ -64,6 +65,18 @@ export const ButtonStyled = styled.button`
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
+  }
+  :hover {
+    transition: all 0.05s ease-out;
+    filter: hue-rotate(25deg);
+    transform: scale(1.02);
+    mask: none;
+    mask-composite: unset;
+  }
+  :active {
+    transform: scale(1);
+    color: white;
+    background: black;
   }
 `
 export const HeroText = styled.div`
